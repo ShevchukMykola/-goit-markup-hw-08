@@ -1,0 +1,14 @@
+.header{
+  &__logo {
+  padding: 24px 0 25px 0;
+
+  font-family: "Raleway";
+  font-size: 26px;
+  color: #000000;
+
+  text-decoration: none;
+  letter-spacing: 0.03em;}
+  
+  &__logo>.blue {
+  color: var(--text-nav-color);}
+}

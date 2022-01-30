@@ -1,0 +1,107 @@
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  line-height: 1.7;
+
+  background-color: #2f303a;
+  color: #fff;
+        &__box {
+        display: block;
+      }
+        &__logo {
+        font-family: "Raleway";
+        font-size: 26px;
+
+        color: #fff;
+        text-decoration: none;
+      }
+        &__logo>.blue {
+        margin: 0;
+        padding: 0;
+        color: var(--text-nav-color);
+      }
+  &__address {
+  font-style: normal;}
+  &__list {
+  font-style: normal;
+  .list {
+  margin-top: 9px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;}}
+}
+
+.container__footer {
+  display: flex;
+  float: left;
+  
+}
+
+.paragraph {
+  margin-top: 20px;
+  display: block;
+  font-style: normal;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe{ 
+  flex-wrap: wrap;
+
+  margin-left: 93px;
+  margin-top: 12px;
+  width: 570px;
+  height: 86px;
+  &__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    text-transform: uppercase;}
+    &__mail {
+      padding: 0;
+      padding-left: 16px;
+      width: 358px;
+      height: 50px;
+      background-color: transparent;
+      color: #ffffff99;
+      border: 1px solid #ffffff99;
+      border-radius: 4px;}
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 12px;
+      border-radius: 4px;
+      width: 200px;
+      height: 50px;
+
+      border: 1px solid var(--text-nav-color);
+      background-color: var(--text-nav-color);
+      color: var(--background-button);
+
+      cursor: pointer;
+
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.9;
+
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+      border: 1px solid var(--buttom-hover);
+      background-color: var(--buttom-hover);
+      color: #fff;}}
+    &__icon {
+      margin-left: 10px;
+      fill: currentColor;}
+
+      display: flex;
+}

@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; 
 }
 
 *,
@@ -16,12 +16,21 @@ body {
 *::after {
   box-sizing: inherit;
 }
-.section {
-  padding: 94px 0;
-}
+// .section {
+//   padding: 94px 0;
+// }
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  min-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+
+   @media screen and ($mobile) {
+    width: 450px;}
+
+    @media screen and ($tablet) {
+      width: 768px;
+    }
+    @media screen and($desktop) {
+      width: 1140px;      
+    }
 }

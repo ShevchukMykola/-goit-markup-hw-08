@@ -1,14 +1,15 @@
 .header {
-  align-items: center;
-  padding: 0 15px;
+  
   ul {line-height: 1.2;}
-          &__container {
-            display: flex;}
-          
-            
-
-          &__nav {
-            display: flex;}
+  @media screen and (min-width: 320px) {
+  align-items: center;
+  padding: 0 15px;}
+  @media screen and (min-width: 768px) {
+    &__nav {
+     display: flex;}
+    &__container {
+    display: flex;}
+  }
 }
 .portfolio__header {
   border-bottom: 1px solid #ececec;

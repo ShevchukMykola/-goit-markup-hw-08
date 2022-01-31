@@ -16,20 +16,11 @@ body {
 *::after {
   box-sizing: inherit;
 }
-// .section {
-//   padding: 94px 0;
-// }
+.section {
+  padding: 60px 0;
+}
 .container {
-  min-width: 450px;
+  min-width: 360px;
   margin-left: auto;
   margin-right: auto;}
 
-//    @media screen and ($mobile) {
-//     width: 450px;}
-
-//     @media screen and ($tablet) {
-//       width: 768px;
-//     }
-//     @media screen and($desktop) {
-//       width: 1140px;      
-//     }

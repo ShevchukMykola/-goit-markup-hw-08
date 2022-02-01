@@ -1,26 +1,28 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-body {
-  background-color: #ffffff;
-  color: #757575;
 
-  font-family: "Roboto", "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.03em; 
+body {
+    background-color: #ffffff;
+    color: #757575;
+    font-family: "Roboto", "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
-.section {
-  padding: 60px 0;
-}
-.container {
-  min-width: 360px;
-  margin-left: auto;
-  margin-right: auto;}
 
+.section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

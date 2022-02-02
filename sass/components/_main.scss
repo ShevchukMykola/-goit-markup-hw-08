@@ -19,10 +19,14 @@ body {
 
 .section {
     padding: 60px 0;
+    @media screen and (min-widht: 1200px) {
+        padding: 94px 0;
+    }
 }
 
 .container {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }

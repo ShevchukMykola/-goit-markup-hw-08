@@ -1,30 +1,19 @@
 .header {
+    padding: 0 15px;
     ul {
         line-height: 1.2;
     }
-    @media screen and (min-width: 320px) {
-        padding: 0 15px;
-        &__nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 60px;
-        }
-    }
-    @media screen and (min-width: 768px) {
-        &__nav {
-            display: flex;
-        }
-        &__container {
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 60px;
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
             display: flex;
         }
     }
-    @media screen and (min-width: 1200px) {
-        padding: 15px;
-        &__nav {
-            display: flex;
-        }
-        &__container {
+    &__container {
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
             display: flex;
         }
     }

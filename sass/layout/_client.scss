@@ -11,6 +11,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (min-width: 360px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__link {
         display: flex;

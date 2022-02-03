@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     ul {
         line-height: 1.2;
     }
@@ -31,14 +32,22 @@
     border: none;
 }
 
-.header__mobile-menu .icon__menu-close {
-    display: none;
+.mobile__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
 }
 
-.header__mobile-menu.is-open .icon__menu-open {
+.header__mobile-menu .icon__menu-open {
     display: none;
 }
 
 .header__mobile-menu.is-open .icon__menu-close {
+    display: none;
+}
+
+.header__mobile-menu.is-open .icon__menu-open {
     display: block;
 }

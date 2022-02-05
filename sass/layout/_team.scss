@@ -26,12 +26,12 @@
         text-align: center;
         font-weight: 400;
         font-size: 16px;
-        @media screen and (min-width: 360px) {
-            width: 450px;
+        @media screen and (min-width: 480px) {
+            max-width: 450px;
             height: 622px;
         }
         @media screen and (min-width: 768px) and (max-width:1200px) {
-            width: 354px;
+            max-width: 354px;
             height: 536px;
         }
     }

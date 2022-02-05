@@ -4,7 +4,7 @@
 @import './components/main';
 @import './components/modal';
 @import './components/reset-styles';
-
+@import './components/mobile-menu';
 @import './layout/benefits';
 @import './layout/client';
 @import './layout/hero';
@@ -12,8 +12,7 @@
 @import './layout/site-nav';
 @import './layout/social-icon';
 @import './layout/team';
-@import './layout/work' ;
-
+@import './layout/work';
 @import './utils/btn';
 @import './utils/colors';
 @import './utils/breakpoint';

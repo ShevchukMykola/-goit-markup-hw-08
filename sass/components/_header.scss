@@ -1,5 +1,4 @@
 .header {
-    position: relative;
     ul {
         line-height: 1.2;
     }
@@ -34,21 +33,23 @@
 }
 
 .mobile__menu {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: cubic-bezier(.84, -0.37, .19, 1.44), transform 1.5s;
 }
 
-.header__mobile-menu .icon__menu-open {
-    display: none;
+.mobile__menu.is-open {
+    transform: translateY(0);
+    transition: cubic-bezier(.84, -0.37, .19, 1.44), transform 1.5s;
 }
 
-.header__mobile-menu.is-open .icon__menu-close {
-    display: none;
-}
-
-.header__mobile-menu.is-open .icon__menu-open {
+.js-close-menu {
     display: block;
+    margin-left: auto;
 }

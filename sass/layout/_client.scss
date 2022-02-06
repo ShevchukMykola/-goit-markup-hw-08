@@ -1,46 +1,67 @@
- @import '../utils/colors';
- .client {
-     h2 {
-         margin-bottom: 50px;
-         text-align: center;
-         color: var(--text-title-color);
-         font-size: 36px;
-         font-weight: 700;
-         line-height: 1.2;
-     }
-     &__list {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         @media screen and (min-width: 360px) {
-             display: flex;
-             flex-wrap: wrap;
-             justify-content: center;
-         }
-     }
-     &__link {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         width: 170px;
-         height: 92px;
-         border: 1px solid var(--logo-color);
-         border-radius: 4px;
-         background-color: #fff;
-         color: var(--logo-color);
-         transition-duration: 250ms;
-         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-         &:hover,
-         &:focus {
-             border-color: var(--buttom-hover);
-             color: var(--buttom-hover);
-         }
-     }
-     &__icon {
-         fill: currentColor;
-     }
- }
- 
- .client__logo+.client__logo {
-     margin-left: 30px;
- }
+@import '../utils/colors';
+.client {
+    h2 {
+        margin-bottom: 50px;
+        text-align: center;
+        color: getColor('text-title-color');
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+        height: 92px;
+        border: 1px solid getColor('logo-color');
+        border-radius: 4px;
+        background-color: getColor('body-color');
+        color: getColor('logo-color');
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            border-color: getColor('buttom-hover');
+            color: getColor('buttom-hover');
+        }
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+            flex-wrap: nowrap;
+        }
+    }
+    &__icon {
+        fill: currentColor;
+    }
+    &__logo {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        flex-basis: calc((100% - 30px) /2);
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+            flex-basis: calc((100% - 60px) /3);
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 150px) /6);
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+}

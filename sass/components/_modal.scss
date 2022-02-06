@@ -15,9 +15,9 @@
  }
  
  .modal {
-     width: 528px;
-     min-height: 581px;
-     background-color: #fff;
+     max-width: 450px;
+     min-height: 609px;
+     background-color: getColor('body-color');
      border-radius: 4px;
      position: absolute;
      top: 50%;
@@ -38,7 +38,7 @@
          border: 1px solid #0000001a;
          &:hover,
          &:focus {
-             color: var(--text-nav-color);
+             color: getColor('text-nav-color');
              outline: none;
          }
          &-clouse {
@@ -54,7 +54,7 @@
  }
  
  .form {
-     width: 448px;
+     max-width: 370px;
      margin-left: auto;
      margin-right: auto;
      &-box {
@@ -74,9 +74,9 @@
          border-radius: 4px;
          width: 200px;
          height: 50px;
-         border: 1px solid var(--text-nav-color);
-         background-color: var(--text-nav-color);
-         color: var(--background-button);
+         border: 1px solid getColor('text-nav-color');
+         background-color: getColor('text-nav-color');
+         color: getColor('background-button');
          cursor: pointer;
          font-family: inherit;
          font-size: 16px;
@@ -86,9 +86,9 @@
          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
          &:hover,
          &:focus {
-             border: 1px solid var(--buttom-hover);
-             background-color: var(--buttom-hover);
-             color: #fff;
+             border: 1px solid getColor('buttom-hover');
+             background-color: getColor('buttom-hover');
+             color: getColor('body-color');
          }
      }
  }
@@ -132,14 +132,14 @@
          border-radius: 4px;
          outline: none;
          &:focus {
-             border-color: var(--text-nav-color);
+             border-color: getColor('text-nav-color');
              outline: none;
          }
      }
  }
  
  .label-input:focus~.label-icon {
-     fill: var(--text-nav-color);
+     fill: getColor('text-nav-color');
  }
  
  .modal-form-coments::placeholder {
@@ -157,9 +157,9 @@
          color: #000000;
      }
      &-link {
-         color: var(--text-nav-color);
+         color: getColor('text-nav-color');
          &:hover {
-             color: var(--buttom-hover);
+             color: getColor('buttom-hover');
          }
      }
      &-text {

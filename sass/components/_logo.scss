@@ -1,3 +1,4 @@
+@import '../utils/colors';
 .header {
     &__logo {
         padding: 16px 0;
@@ -26,6 +27,6 @@
         }
     }
     &__logo>.blue {
-        color: var(--text-nav-color);
+        color: map-get($colors, 'text-nav-color');
     }
 }

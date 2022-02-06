@@ -1,94 +1,95 @@
-        .site__nav {
-            display: flex;
-            margin-left: 93px;
-            @media screen and (min-width: 480px) {
-                display: block;
-                margin-left: 40px;
-                text-align: start;
-            }
-            &-list {
-                &>.link:hover,
-                &>.link:focus {
-                    color: var(--text-nav-color);
-                }
-                @media screen and (min-width:480px) {
-                    margin-bottom: 32px;
-                }
-            }
-        }
-        
-        .link {
-            position: relative;
-            padding: 32px 0 32px 0;
-            font-weight: 500;
-            text-decoration: none;
-            color: var(--text-title-color);
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .current {
-            font-weight: 500;
-            text-decoration: none;
+@import '../utils/colors';
+.site__nav {
+    display: flex;
+    margin-left: 93px;
+    @media screen and (min-width: 480px) {
+        display: block;
+        margin-left: 40px;
+        text-align: start;
+    }
+    &-list {
+        &>.link:hover,
+        &>.link:focus {
             color: var(--text-nav-color);
-            &::after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 4px;
-                left: 0;
-                bottom: 0;
-                background-color: var(--text-nav-color);
-                border-radius: 2px;
-                @media screen and (min-width: 360px) and (max-width: 768px) {
-                    display: none;
-                }
-            }
         }
-        
-        .site__nav .site__nav-list+.site__nav-list {
-            margin-left: 50px;
-            @media screen and(min-width: 360px) {
-                margin-left: 0;
-            }
+        @media screen and (min-width:480px) {
+            margin-bottom: 32px;
         }
-        
-        .header__contact {
-            display: flex;
-            margin-left: auto;
-            padding: 32px 0 32px 0;
-            justify-content: center;
-            align-items: center;
-            &:hover,
-            &:focus {
-                color: var(--text-nav-color);
-            }
-            @media screen and (min-width:360px) {
-                display: block;
-            }
+    }
+}
+
+.link {
+    position: relative;
+    padding: 32px 0 32px 0;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-title-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-nav-color);
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+        background-color: var(--text-nav-color);
+        border-radius: 2px;
+        @media screen and (min-width: 360px) and (max-width: 768px) {
+            display: none;
         }
-        
-        .contact {
-            &__nav {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: var(--text-primary-color);
-                text-decoration: none;
-                font-weight: 500;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                &:hover,
-                &:focus {
-                    color: var(--text-nav-color);
-                }
-            }
-            &__icon {
-                margin-right: 10px;
-                fill: currentColor;
-            }
+    }
+}
+
+.site__nav .site__nav-list+.site__nav-list {
+    margin-left: 50px;
+    @media screen and(min-width: 360px) {
+        margin-left: 0;
+    }
+}
+
+.header__contact {
+    display: flex;
+    margin-left: auto;
+    padding: 32px 0 32px 0;
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &:focus {
+        color: var(--text-nav-color);
+    }
+    @media screen and (min-width:360px) {
+        display: block;
+    }
+}
+
+.contact {
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: var(--text-nav-color);
         }
-        
-        .contact__list+.contact__list {
-            margin-left: 50px;
-        }
+    }
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}
+
+.contact__list+.contact__list {
+    margin-left: 50px;
+}

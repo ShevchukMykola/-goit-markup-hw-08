@@ -1,42 +1,60 @@
-@media screen and (min-width:480px) and (max-width:768px) {
-    .mobile {
-        &__menu-nav {
-            display: block;
-            margin-left: 40px;
-            text-align: start;
-        }
-    }
-    .menu {
-        &__nav-list {
-            &>.nav__link:hover,
-            &>.nav__link:focus {
-                color: var(--text-nav-color);
+    @import '../utils/colors';
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        // display: block;
+        // margin-left: 40px;
+        // text-align: start;
+        .mobile {
+            &__menu-nav {
+                margin-left: 40px;
             }
         }
-        // &__contact {}
-        // &__social {}
-        // &__social-list {}
+        .menu {
+            margin-left: 40px;
+            &__nav-list {
+                margin-bottom: 32px;
+                &>.nav__link:hover,
+                &>.nav__link:focus {
+                    color: map-get($colors, 'text-nav-color');
+                }
+            }
+            &__contact {
+                margin-top: 270px;
+            }
+            // &__social {}
+            &__social-list {
+                margin-left: 40px;
+            }
+        }
+        .nav__link {
+            position: relative;
+            text-decoration: none;
+            color: getColor('text-title-color');
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+        }
+        // .current {}
+        .contact--list {
+            margin-left: 40px;
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            color: map-get($colors, 'text-primary-color');
+            text-decoration: none;
+        }
+        // .contact__nav {}
+        .phone {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: getColor('text-title-color');
+        }
     }
-    .nav__link {
-        position: relative;
-        text-decoration: none;
-        color: var(--text-title-color);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-    }
-    // .current {}
-    .contact-list {
-        display: flex;
-        justify-content: start;
-        align-items: flex-start;
-        color: var(--text-primary-color);
-        text-decoration: none;
-    }
-    // .contact__nav {}
-}

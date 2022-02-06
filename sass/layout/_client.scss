@@ -1,45 +1,46 @@
-.client {
-    h2 {
-        margin-bottom: 50px;
-        text-align: center;
-        color: var(--text-title-color);
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-    &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @media screen and (min-width: 360px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-    &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 170px;
-        height: 92px;
-        border: 1px solid var(--logo-color);
-        border-radius: 4px;
-        background-color: #fff;
-        color: var(--logo-color);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-            border-color: var(--buttom-hover);
-            color: var(--buttom-hover);
-        }
-    }
-    &__icon {
-        fill: currentColor;
-    }
-}
-
-.client__logo+.client__logo {
-    margin-left: 30px;
-}
+ @import '../utils/colors';
+ .client {
+     h2 {
+         margin-bottom: 50px;
+         text-align: center;
+         color: var(--text-title-color);
+         font-size: 36px;
+         font-weight: 700;
+         line-height: 1.2;
+     }
+     &__list {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         @media screen and (min-width: 360px) {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+         }
+     }
+     &__link {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 170px;
+         height: 92px;
+         border: 1px solid var(--logo-color);
+         border-radius: 4px;
+         background-color: #fff;
+         color: var(--logo-color);
+         transition-duration: 250ms;
+         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         &:hover,
+         &:focus {
+             border-color: var(--buttom-hover);
+             color: var(--buttom-hover);
+         }
+     }
+     &__icon {
+         fill: currentColor;
+     }
+ }
+ 
+ .client__logo+.client__logo {
+     margin-left: 30px;
+ }

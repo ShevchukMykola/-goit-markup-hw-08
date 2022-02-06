@@ -10,7 +10,7 @@
     &-list {
         &>.link:hover,
         &>.link:focus {
-            color: var(--text-nav-color);
+            color: getColor('text-nav-color');
         }
         @media screen and (min-width:480px) {
             margin-bottom: 32px;
@@ -23,7 +23,7 @@
     padding: 32px 0 32px 0;
     font-weight: 500;
     text-decoration: none;
-    color: var(--text-title-color);
+    color: getColor('text-title-color');
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -31,7 +31,7 @@
 .current {
     font-weight: 500;
     text-decoration: none;
-    color: var(--text-nav-color);
+    color: getColor('text-nav-color');
     &::after {
         content: "";
         position: absolute;
@@ -39,7 +39,7 @@
         height: 4px;
         left: 0;
         bottom: 0;
-        background-color: var(--text-nav-color);
+        background-color: getColor('text-nav-color');
         border-radius: 2px;
         @media screen and (min-width: 360px) and (max-width: 768px) {
             display: none;
@@ -62,7 +62,7 @@
     align-items: center;
     &:hover,
     &:focus {
-        color: var(--text-nav-color);
+        color: getColor('text-nav-color');
     }
     @media screen and (min-width:360px) {
         display: block;
@@ -74,14 +74,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: var(--text-primary-color);
+        color: getColor('text-primary-color');
         text-decoration: none;
         font-weight: 500;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
-            color: var(--text-nav-color);
+            color: getColor('text-nav-color');
         }
     }
     &__icon {

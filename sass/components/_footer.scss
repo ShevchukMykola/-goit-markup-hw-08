@@ -8,6 +8,9 @@
     &__box {
         display: block;
         text-align: center;
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
     }
     &__logo {
         font-family: "Raleway";
@@ -41,7 +44,7 @@
         text-align: center;
         @media screen and (min-width: 768px) {
             margin-top: 5px;
-            align-self: flex-end;
+            align-self: flex-start;
             margin-left: 165px;
         }
         @media screen and (min-width:1200px) {
@@ -117,7 +120,7 @@
     align-items: center;
     margin-top: 60px;
     text-align: center;
-    max-width: 450px;
+    width: 450px;
     height: 156px;
     @media screen and (min-width: 768px) {
         width: 450px;
@@ -126,7 +129,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin-left: 93px;
-        max-width: 570px;
+        margin-top: 12px;
+        width: 570px;
         height: 86px;
     }
     &__title {
@@ -136,7 +140,7 @@
         text-transform: uppercase;
     }
     &__mail {
-        max-width: 450px;
+        width: 450px;
         height: 50px;
         background-color: transparent;
         color: #ffffff99;
@@ -173,6 +177,10 @@
             border: 1px solid getColor('buttom-hover');
             background-color: getColor('buttom-hover');
             color: getColor('body-color');
+        }
+        @media screen and (min-width:1200px) {
+            margin-top: 0;
+            margin-left: 12px;
         }
     }
     &__icon {

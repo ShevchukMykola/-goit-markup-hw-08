@@ -120,7 +120,6 @@
     align-items: center;
     margin-top: 60px;
     text-align: center;
-    width: 450px;
     height: 156px;
     @media screen and (min-width: 768px) {
         width: 450px;
@@ -140,7 +139,8 @@
         text-transform: uppercase;
     }
     &__mail {
-        width: 450px;
+        max-width: 450px;
+        min-width: 320px;
         height: 50px;
         background-color: transparent;
         color: #ffffff99;

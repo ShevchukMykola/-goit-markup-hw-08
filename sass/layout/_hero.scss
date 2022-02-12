@@ -24,7 +24,7 @@
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: linear-gradient(to top, #2f303a66, #2f303a66), url(../img/Adaptiv/ImgheaderPC2x.jpg);
         }
-        max-height: 600px;
+        height: 600px;
     }
     &__title {
         padding-top: 58px;

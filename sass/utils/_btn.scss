@@ -1,35 +1,45 @@
 .project {
-  font-size: 16px;
-  line-height: 1.9;
-  &__item {
-  display: flex;
-  justify-content: center;}
+    font-size: 16px;
+    line-height: 1.9;
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        @media screen and (min-width: 768px) {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__list {
+        margin-bottom: 15px;
+        margin-right: 8px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
+    }
 }
-.project__item .project__list + .project__list {
-  margin-left: 8.01px;
-}
+
 .list__buttom {
-  border-radius: 4px;
-  border: 1px solid var(--background-button);
-  min-height: 38px;
-  padding: 6px 22.02px;
-
-  background-color: var(--background-button);
-  color: var(--text-title-color);
-
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.6;
-
-  cursor: pointer;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-  border: 1px solid var(--text-nav-color);
-  background-color: var(--text-nav-color);
-  color: #fff;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);}
+    border-radius: 4px;
+    border: 1px solid getColor('background-button');
+    min-height: 38px;
+    padding: 6px 22.02px;
+    background-color: getColor('background-button');
+    color: getColor('text-title-color');
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.6;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border: 1px solid getColor('text-nav-color');
+        background-color: getColor('text-nav-color');
+        color: #fff;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }

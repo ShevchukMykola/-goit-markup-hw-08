@@ -3,24 +3,24 @@
      h2 {
          margin-bottom: 50px;
          text-align: center;
-         color: map-get($colors, 'text-title-color');
+         color: getColor('text-title-color');
          font-size: 36px;
          font-weight: 700;
          line-height: 1.2;
      }
      background-color: #f5f4fa;
      &__title {
-         display: flex;
-         @media screen and (min-width: 360px) {
-             display: inline-block;
-         }
-         @media screen and (min-width: 768px) and (max-width:1200px) {
+         display: inline-block;
+         @media screen and (min-width: 768px) {
              display: flex;
              flex-wrap: wrap;
          }
+         @media screen and (min-width: 1200px) {
+             display: flex;
+         }
      }
      &__list {
-         padding-bottom: 30px;
+         margin-bottom: 30px;
          background: #ffffff;
          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
          border-radius: 0px 0px 4px 4px;
@@ -31,21 +31,36 @@
              max-width: 450px;
              height: 622px;
          }
-         @media screen and (min-width: 768px) and (max-width:1200px) {
+         @media screen and (min-width: 768px) and (max-width:1199px) {
+             margin-right: 30px;
+             flex-basis: calc((100% - 30px) /2);
              max-width: 354px;
              height: 536px;
+             &:nth-child(2n) {
+                 margin-right: 0;
+             }
+         }
+         @media screen and (min-width: 1200px) {
+             width: 270px;
+             height: 428px;
+             margin-right: 30px;
+             flex-basis: calc((100% - 90px) /4);
+             &:nth-last-child(1) {
+                 margin-right: 0;
+             }
          }
      }
  }
  
- .team__title .team__list+.team__list {
-     margin-left: 30px;
- }
- 
+ //  @media screen and (min-width: 768px) {
+ //      .team__title .team__list+.team__list {
+ //          margin-left: 30px;
+ //      }
+ //  }
  .list__name {
      margin-top: 30px;
      margin-bottom: 10px;
-     color: map-get($colors, 'text-title-color');
+     color: getColor('text-title-color');
      font-weight: 500;
  }
  
@@ -66,12 +81,12 @@
      align-items: center;
      border-radius: 50%;
      background-color: #fff;
-     color: map-get($colors, 'logo-color');
+     color: getColor('logo-color');
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
      &:hover,
      &:focus {
-         background-color: map-get($colors, 'buttom-hover');
+         background-color: getColor('buttom-hover');
          color: #fff;
      }
  }

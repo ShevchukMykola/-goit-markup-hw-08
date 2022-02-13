@@ -40,6 +40,16 @@
     padding: 0;
     background: none;
     border: none;
+    &:hover,
+    &:focus {
+        color: getColor('text-nav-color');
+    }
+}
+
+.icon__menu-open,
+.icon__menu-close {
+    fill: currentColor;
+    transition: 250ms;
 }
 
 .mobile__menu {

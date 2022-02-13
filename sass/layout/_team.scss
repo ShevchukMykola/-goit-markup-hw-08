@@ -10,9 +10,13 @@
      }
      background-color: #f5f4fa;
      &__title {
-         display: inline-block;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
          @media screen and (min-width: 768px) {
              display: flex;
+             flex-direction: inherit;
              flex-wrap: wrap;
          }
          @media screen and (min-width: 1200px) {

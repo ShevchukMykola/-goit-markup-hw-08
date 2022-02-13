@@ -68,7 +68,16 @@
      }
      &-consend {
          position: relative;
-         padding-left: 30px;
+         padding-left: 20px;
+         font-size: 12px;
+         line-height: 1.2;
+         letter-spacing: 0.03em;
+         @media screen and (min-width: 1200px) {
+             padding-left: 30px;
+             font-size: 14px;
+             line-height: 1.7;
+             letter-spacing: 0.03em;
+         }
      }
      &-button {
          display: block;

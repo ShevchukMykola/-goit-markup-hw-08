@@ -27,6 +27,6 @@
         }
     }
     &__logo>.blue {
-        color: map-get($colors, 'text-nav-color');
+        color: getColor('text-nav-color');
     }
 }

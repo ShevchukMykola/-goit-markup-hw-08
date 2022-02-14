@@ -1,12 +1,20 @@
 @import '../utils/colors';
 .client {
     h2 {
-        margin-bottom: 50px;
-        text-align: center;
-        color: getColor('text-title-color');
-        font-size: 36px;
-        font-weight: 700;
+        margin-bottom: 30px;
+        font-size: 28px;
         line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: getColor('text-title-color');
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+            text-align: center;
+            color: getColor('text-title-color');
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
     }
     &__list {
         display: flex;

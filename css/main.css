@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   line-height: 1.7;
   background-color: #2f303a;
-  color: getColor "body-color";
+  color: #ffffff;
 }
 
 .footer__box {
@@ -460,7 +460,7 @@ body {
   padding: 60px 0;
 }
 
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
@@ -474,7 +474,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 
@@ -951,6 +951,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-bottom: 0;
+  }
+}
+
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1073,12 +1079,23 @@ ul {
 }
 
 .client h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  color: #212121;
-  font-size: 36px;
-  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .client h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
 }
 
 .client__list {
@@ -1185,7 +1202,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-height: 400px;
+  height: 400px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1220,6 +1237,7 @@ ul {
   .hero {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#2f303a66), to(#2f303a66)), url(../img/Adaptiv/ImgheaderPC1x.jpg);
     background-image: linear-gradient(to top, #2f303a66, #2f303a66), url(../img/Adaptiv/ImgheaderPC1x.jpg);
+    padding: 0;
     height: 600px;
   }
 }
@@ -1244,6 +1262,19 @@ ul {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 696px;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+  }
 }
 
 .hero__buttom {
@@ -1326,8 +1357,6 @@ ul {
   .project__picture {
     margin-right: 30px;
     margin-bottom: 30px;
-    -ms-flex-preferred-size: calc((100%-30px) / 2);
-        flex-basis: calc((100%-30px) / 2);
   }
   .project__picture:nth-child(2n) {
     margin-right: 0;
@@ -1338,8 +1367,6 @@ ul {
   .project__picture {
     margin-right: 30px;
     margin-bottom: 30px;
-    -ms-flex-preferred-size: calc((100%-60px) /3);
-        flex-basis: calc((100%-60px) /3);
   }
   .project__picture:nth-child(3n) {
     margin-right: 0;
@@ -1621,12 +1648,23 @@ ul {
 }
 
 .team h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  color: #212121;
-  font-size: 36px;
-  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .team h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
 }
 
 .team__title {

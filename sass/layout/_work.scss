@@ -12,7 +12,7 @@
      h2 {
          margin-bottom: 50px;
          text-align: center;
-         color: map-get($colors, 'text-title-color');
+         color: getColor('text-title-color');
          font-size: 36px;
          font-weight: 700;
          line-height: 1.2;

@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-height: 400px;
+    height: 400px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to top, #2f303a66, #2f303a66), url(../img/Adaptiv/header2x-min.jpg);
     }
@@ -24,6 +24,7 @@
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: linear-gradient(to top, #2f303a66, #2f303a66), url(../img/Adaptiv/ImgheaderPC2x.jpg);
         }
+        padding: 0;
         height: 600px;
     }
     &__title {
@@ -36,17 +37,19 @@
         line-height: 1.6;
         text-align: center;
         letter-spacing: 0.06em;
-        // padding-top: 140px;
-        // margin-left: auto;
-        // margin-right: auto;
-        // margin-bottom: 30px;
         color: #ffffff;
-        // max-width: 696px;
-        // font-size: 44px;
-        // font-weight: 900;
-        // line-height: 1.4;
         text-transform: uppercase;
         text-align: center;
+        @media screen and (min-width: 1200px) {
+            padding-top: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            max-width: 696px;
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.4;
+        }
     }
     &__buttom {
         display: block;

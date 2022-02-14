@@ -34,6 +34,9 @@
  }
  
  .benefits {
+     @media screen and (min-width: 1200px) {
+         padding-bottom: 0;
+     }
      &__list {
          display: flex;
          flex-direction: column;
@@ -58,7 +61,7 @@
          margin-bottom: 30px;
          min-height: 120px;
          min-width: 450px;
-         background-color: map-get($colors, 'background-button');
+         background-color: getColor('background-button');
          border-radius: 4px;
          @media screen and (min-width: 768px) {
              display: flex;

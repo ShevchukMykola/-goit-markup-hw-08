@@ -1,12 +1,20 @@
  @import '../utils/colors';
  .team {
      h2 {
-         margin-bottom: 50px;
-         text-align: center;
-         color: getColor('text-title-color');
-         font-size: 36px;
-         font-weight: 700;
+         margin-bottom: 30px;
+         font-size: 28px;
          line-height: 1.2;
+         text-align: center;
+         letter-spacing: 0.03em;
+         color: getColor('text-title-color');
+         @media screen and(min-width: 1200px) {
+             margin-bottom: 50px;
+             text-align: center;
+             color: getColor('text-title-color');
+             font-size: 36px;
+             font-weight: 700;
+             line-height: 1.2;
+         }
      }
      background-color: #f5f4fa;
      &__title {
@@ -56,11 +64,6 @@
      }
  }
  
- //  @media screen and (min-width: 768px) {
- //      .team__title .team__list+.team__list {
- //          margin-left: 30px;
- //      }
- //  }
  .list__name {
      margin-top: 30px;
      margin-bottom: 10px;

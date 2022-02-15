@@ -173,6 +173,7 @@
          color: #000000;
      }
      &-link {
+         text-decoration: none;
          color: getColor('text-nav-color');
          &:hover {
              color: getColor('buttom-hover');

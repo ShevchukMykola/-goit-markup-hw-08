@@ -711,6 +711,7 @@ body {
 }
 
 .modal-link {
+  text-decoration: none;
   color: #2196f3;
 }
 

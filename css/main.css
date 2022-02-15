@@ -209,6 +209,7 @@
 }
 
 .subscribe__mail {
+  padding-left: 16px;
   max-width: 450px;
   min-width: 320px;
   height: 50px;
@@ -711,7 +712,6 @@ body {
 }
 
 .modal-link {
-  text-decoration: none;
   color: #2196f3;
 }
 
